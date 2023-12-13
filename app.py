@@ -26,6 +26,20 @@ def delete(id):
     db.session.commit()
     return redirect('/')
 
+
+@app.route('/update/<int:id>', methods=['GET', 'POST'])
+def update(id):
+    update_task = Todo.query.get(id)
+    
+    if request.method == 'GET':
+        return render_template('update.html', update_task=update_task)
+    update_task.title = request.form.get('title')
+    update_task.details = request.form.get('details')
+    db.session.commit()
+    return redirect("/")
+
+   
+
 @app.route("/")
 def index():
     tasks = Todo.query.all()
