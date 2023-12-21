@@ -10,17 +10,28 @@ body {
 }
 
 .task {
-    border: 1px solid #ccc;
+    border: 1px solid #d8018d;
     margin-bottom: 10px;
     padding: 10px;
 }
 
-.task h2 {
-    margin-bottom: 5px;
+h1{
+    margin:30px;
+    padding:12px;
+    color:#F08972;
+    text-align:center;
+    border-top:1px solid #F08972;
+    border-bottom:1px solid #F08972;
 }
 
-.task p {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* その他のスタイリングを追加 */
