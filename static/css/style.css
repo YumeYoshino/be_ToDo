@@ -1,0 +1,26 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink; /* ピンクの背景色を追加 */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.task {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.task h2 {
+    margin-bottom: 5px;
+}
+
+.task p {
+    margin: 0;
+}
+
+/* その他のスタイリングを追加 */
